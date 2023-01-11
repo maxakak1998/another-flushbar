@@ -84,7 +84,7 @@ class FlushbarRoute<T> extends OverlayRoute<T> {
                 child: _createBackgroundOverlay(),
               );
             },
-            maintainState: false,
+            maintainState: true,
             opaque: opaque),
       );
     }
@@ -105,7 +105,7 @@ class FlushbarRoute<T> extends OverlayRoute<T> {
             );
             return annotatedChild;
           },
-          maintainState: false,
+          maintainState: true,
           opaque: opaque),
     );
 
